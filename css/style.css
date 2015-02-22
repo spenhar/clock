@@ -10,7 +10,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 	width: 100%;
 	height: 100%;
-	background: url("/img/Glacier2.jpg") no-repeat left center fixed; 
+	background: url("../img/Glacier2.jpg") no-repeat left center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
