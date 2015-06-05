@@ -20,10 +20,11 @@ html {
 
 #h1-top {
 	position: fixed;
-	padding: 25px;
 	background-color: black;
-	text-transform: uppercase;
-	letter-spacing: .8em;
+	padding: 1rem;
+	letter-spacing: .8rem;
+	color: #fff;
+	opacity: 1;
 }
 
 body {
@@ -35,51 +36,96 @@ body {
 
 }
 
+h1 {
+	font-size: 1rem;
+	padding-top: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+}
+
 h2 {
 	font-weight: 100;
 	font-size: 10pt;
 	text-align: center;
 }
 
+h4 {
+	text-align: center;
+	font-size: .7rem;
+	padding-top: .8rem;
+	text-transform: uppercase;
+	letter-spacing: .4rem;
+}
+
 .time {
 	position: relative;
+	float: left;
 	height: 100%;
-	width: 100%;
-	text-align: center;
+	width: 75%;
+
+	/*padding: 15% 10%;*/
+
 	/*border: solid 3px;*/
-	/*background-color: rgba(157,200,67,.1);*/
+	background-color: rgba(157,200,67,.1);
+}
+
+.clock {
+	max-width: 44rem;
+	margin: 33% auto;
+	height: 33%;
+}
+
+.feed {
+	text-align: center;
+	position: relative;
+	height: 200%;
+	float: right;
+	width: 25%;
+	background-color: rgba(240,100,67,.3);
+}
+
+.grey {
+	opacity: .4;
 }
 
 
-.time-hour {
+.time-hour, .time-minute, .time-second, .time-days {
 	display: block;
 	content:' ';
-	position: absolute;
-	border-right: solid 2px;
-	top: 33%;
-	bottom: 33%;
-	left: 0;
-	right: 50%;
+	float: left;
+  top: 33%;
+  bottom: 33%;
+  margin: 4%;
+  width: 7rem;
+  height: 7rem;
+  padding: 2% 0px;
+
 	/*background-color: blue;*/
+	/*border-right: solid 2px*/
+}
+
+/*.time-days {
+	left: 0;
+}
+
+.time-hour {
+	left: 25%;
 }
 
 .time-minute {
-	display: block;
-	content:' ';
-	position: absolute;
-	top: 33%;
-	bottom: 33%;
 	left: 50%;
-	right: 0;
-	/*vertical-align: center;*/
-	/*background-color: red;*/
 }
 
-#hours,#minutes {
-	font-size: 14em;
+.time-second {
+	left: 75%;
+}*/
+
+#days,#hours,#minutes,#seconds {
+	font-size: 5em;
 	padding-top: 7%;
 	font-weight: 300;
 	letter-spacing: .1em;
+	text-align: center;
 }
 
 #minutes {
