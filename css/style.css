@@ -60,20 +60,27 @@ h4 {
 .time {
 	position: relative;
 	float: left;
-	height: 400px;
-	width: 75%;
+	height: 100%;
+	width: 100%;
 
-	/*padding: 15% 10%;*/
+	padding: 15% 10%;
 
 	/*border: solid 3px;*/
-	background-color: rgba(157,200,67,.1);
 }
 
 .clock {
 	max-width: 44rem;
-	margin: 100px auto;
-	height: 33%;
+	padding: 100px auto;
+	margin: 0 auto;
+	height: 50%;
 }
+
+/* Larger than tablet */
+/*@media (min-width: 350px) {
+	.clock {
+		max-width: 12rem;
+	}
+}*/
 
 .feed {
 	text-align: center;
@@ -156,3 +163,28 @@ a {
 a:hover {
 	color: rgb(242,108,90);
 }
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries 
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it 
+there. 
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
