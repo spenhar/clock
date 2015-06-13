@@ -117,6 +117,38 @@ iframe {
 	background-color: rgba(240,100,67,.3);
 }
 
+.users {
+	z-index: 5;
+	position: fixed;
+	bottom: 0;
+	background-color: black;
+	padding: 2rem;
+	color: gray;
+}
+
+.users h1 {
+	margin-top: 1rem;
+}
+
+#foundingMembers, #activeUsers {
+	color: white;
+	font-size: 6rem;
+	margin-top: 1rem;
+	padding-right: 2rem;
+}
+
+#foundingMembers {
+	padding-right: 12rem;
+}
+
+.founding, .active {
+	float: left;
+	padding: 2rem;
+}
+
+
+
+
 /*.photos {
 	height: 0;
 	width: 75%;
@@ -159,7 +191,7 @@ iframe {
 }*/
 
 #days,#hours,#minutes,#seconds {
-	font-size: 12em;
+	font-size: 8rem;
 	/*padding-top: 7%;*/
 	font-weight: 300;
 	letter-spacing: .1em;
