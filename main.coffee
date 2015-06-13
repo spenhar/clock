@@ -49,7 +49,7 @@ api =
 
 # Main
 main = () ->
-  pollInterval = 60*1000
+  pollInterval = 2*60*1000
 
   update = () ->
     api.getFounders (err, founders) ->
